@@ -1,0 +1,6 @@
+*{
+    font-family: monospace;
+}
+html, body{
+    scroll-behavior: smooth;
+}
