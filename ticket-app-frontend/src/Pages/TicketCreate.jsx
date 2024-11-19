@@ -25,7 +25,7 @@ const TicketCreate = () => {
       };
 
       // Send the new ticket to the db.json using axios
-      const response = await axios.post(`http://localhost:3000/tickets`, { 
+      const response = await axios.post(`https://tickets-backend-c9xy.onrender.com/tickets`, { 
         data: newTicket
       });
 

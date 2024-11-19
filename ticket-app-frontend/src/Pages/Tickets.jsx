@@ -32,7 +32,7 @@ const Tickets = () => {
       }
 
       // fetch tickets data from the API
-      const response = await axios.get(`http://localhost:3000/tickets`, {
+      const response = await axios.get(`https://tickets-backend-c9xy.onrender.com/tickets`, {
         params: queryParams
       });
 

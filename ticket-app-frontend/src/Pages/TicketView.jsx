@@ -18,7 +18,7 @@ const TicketView = () => {
   const fetchAndUpdateData = async (id) => {
     setLoading(true);
     try {
-      const response = await axios.get(`http://localhost:3000/tickets/${id}`);
+      const response = await axios.get(`https://tickets-backend-c9xy.onrender.com/tickets/${id}`);
       console.log("Response Data:", response.data);
       setTicket(response.data);
       setLoading(false);
@@ -51,7 +51,7 @@ const TicketView = () => {
     try {
       const response = await axios({
         method: 'delete',
-        url: `http://localhost:3000/tickets/${id}`,
+        url: `https://tickets-backend-c9xy.onrender.com/tickets/${id}`,
       });
 
       if (response.status == 200) {
