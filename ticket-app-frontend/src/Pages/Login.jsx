@@ -48,10 +48,10 @@ const Login = () => {
         <Flex direction="column" gap={5} align='center' justify='center'>
 
         {/* Email input here */}
-          <Input required color="gray.700" placeholder="Enter Email Here" type="email" value={email} onChange={(event) => setEmail(event.target.value)} borderRadius="md" focusBorderColor="gay.500" boxShadow="md" p={4} />
+          <Input required color="gray.700" placeholder="Enter Email Here" type="email" value={email} onChange={(event) => setEmail(event.target.value)}  _placeholder={{ color: "red.500" }} borderRadius="md" focusBorderColor="gay.500" boxShadow="md" p={4} />
 
           {/* Password input here */}
-          <Input required color="gray.700" placeholder="Enter Password Here" type="password" value={password} onChange={(event) => setPassword(event.target.value)} borderRadius="md" focusBorderColor="gay.500" boxShadow="md" p={4} />
+          <Input required color="gray.700" placeholder="Enter Password Here" type="password" value={password} onChange={(event) => setPassword(event.target.value)}  _placeholder={{ color: "red.500" }} borderRadius="md" focusBorderColor="gay.500" boxShadow="md" p={4} />
 
           {/* Login button here */}
           <Button onClick={handleLogin} background='red.300' variant="solid" borderRadius="md" boxShadow="md" width='50%' mt={4} p={5} _hover={{ bg: "red.400", transform: "scale(1.05)" }}>LOGIN</Button>
