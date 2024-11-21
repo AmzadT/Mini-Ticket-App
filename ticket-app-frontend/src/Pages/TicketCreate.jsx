@@ -25,7 +25,7 @@ const TicketCreate = () => {
       };
 
       // Send the new ticket to the db.json using axios
-      const response = await axios.post(`https://tickets-backend-c9xy.onrender.com/tickets`, { 
+      const response = await axios.post(`https://good-spice-forest.glitch.me/tickets`, { 
         data: newTicket
       });
 

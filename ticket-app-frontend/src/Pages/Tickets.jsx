@@ -32,7 +32,7 @@ const Tickets = () => {
       }
 
       // fetch tickets data from the API
-      const response = await axios.get(`https://tickets-backend-c9xy.onrender.com/tickets`, {
+      const response = await axios.get(`https://good-spice-forest.glitch.me/tickets`, {
         params: queryParams
       });
 

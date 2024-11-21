@@ -19,7 +19,7 @@ const TicketEdit = () => {
   const fetchAndUpdateData = async (id) => {
     setLoading(true);
     try {
-      const response = await axios.get(`https://tickets-backend-c9xy.onrender.com/tickets/${id}`);
+      const response = await axios.get(`https://good-spice-forest.glitch.me/tickets/${id}`);
       setTicket(response.data);
       setLoading(false);
     } catch (error) {
@@ -54,7 +54,7 @@ const TicketEdit = () => {
         priority: ticket.priority,
         assignee: ticket.assignee,
       };
-      const response = await axios.patch(`https://tickets-backend-c9xy.onrender.com/tickets/${id}`, {
+      const response = await axios.patch(`https://good-spice-forest.glitch.me/tickets/${id}`, {
         data: updatedTicket
       });
 
